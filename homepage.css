@@ -1,0 +1,41 @@
+/* Keep your existing background settings */
+body {
+    background-image: url('bg.jpg');
+    background-size: 110% 110vh; /* Stretches width & height slightly */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 88vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    position: relative;
+}
+.menu-icon{
+    font-size: 20px;
+}
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 80px;
+}
+
+.nav-links li {
+    font-size: 22px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: inherit;
+}
+
