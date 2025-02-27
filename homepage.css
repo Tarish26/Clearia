@@ -1,41 +1,120 @@
-/* Keep your existing background settings */
+/* ✅ Keeping your existing background */
 body {
     background-image: url('bg.jpg');
-    background-size: 110% 110vh; /* Stretches width & height slightly */
+    background-size: 110% 110vh; /* Ensuring same wallpaper effect */
     background-position: center;
     background-repeat: no-repeat;
     height: 88vh;
     width: 100vw;
     overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
 
+/* ✅ Navbar Styling */
 .navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between; /* Space out elements */
     align-items: center;
     padding: 20px;
-    color: rgb(0, 0, 0);
     position: relative;
 }
-.menu-icon{
-    font-size: 20px;
+
+/* ✅ Left-Side Logo */
+.nav-logo {
+    width: 50px; /* Adjust size */
+    height: auto;
+    cursor: pointer;
 }
+
+/* ✅ Centered Navigation Links */
 .nav-links {
     list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
     gap: 80px;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-links li {
     font-size: 22px;
-    cursor: pointer;
     text-align: center;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: inherit;
+    color: black;
 }
 
+/* ✅ Right-Side Hamburger Menu */
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* ✅ Sidebar Menu */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Initially hidden */
+    width: 250px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    transition: right 1s ease-in-out;
+}
+
+/* Sidebar Links */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 50px 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Close Button */
+.close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.slogan{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    justify-content: center;
+    height: 80vh;
+    padding: 20px;
+    margin-left: 50px;
+}
+
+.slogan .lingo{
+   margin-left: 70px ;
+   margin-bottom: 0px;
+   padding-bottom: 0px ;
+}
+.slogan .slogan1{
+    display: flex;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 0px;
+    justify-content: center;
+    align-items: center;
+}

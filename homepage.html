@@ -9,14 +9,37 @@
 <body>
 
     <nav class="navbar">
-        <div class="menu-icon"> 
-            &#9776; <!-- Hamburger Icon ☰ -->
-        </div>
+        <!-- Left-side Logo Icon -->
+        <img src="logoC1.jpg" alt="Logo" class="nav-logo">
+
+        <!-- Centered Navigation Links -->
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
         </ul>
+
+        <!-- Right-side Hamburger Menu -->
+        <div class="menu-icon" onclick="toggleMenu()"> 
+            &#9776;
+        </div>
     </nav>
+
+    <!-- Sidebar Menu -->
+    <div class="sidebar" id="sidebar">
+        <button class="close-btn" onclick="toggleMenu()">✖</button>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <div class="slogan">
+        <h1 class="lingo">Clearia</h1>
+        <h3 class="slogan1">Har update clear, Har moment near!</h3>
+    </div>
+
+    <script src="homepage.js"></script>
 
 </body>
 </html>
